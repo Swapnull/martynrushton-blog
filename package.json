@@ -1,0 +1,18 @@
+{
+  "name":"blog.martynrushton.com",
+  "version":"0.0.1",
+  "description":"Personal Blogging site",
+  "main":"server.js",
+  "dependencies":{
+    "ecstatic":"*",
+    "union":"*"
+  },
+  "scripts":{
+    "start":"node server.js"
+  },
+  "author":"Swapnull",
+  "engines":{
+    "node":">=0.10.0",
+    "npm":">=1.3"
+  }
+}
