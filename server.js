@@ -1,9 +1,9 @@
 var http = require('http')
 var ecstatic = require('ecstatic')
-
-/* Blog options */
 var blogBuilder = require('blog-builder')
 
+
+/* Blog options */
 var options = require('./blog-config.js')
 var blog = new blogBuilder(options)
 
