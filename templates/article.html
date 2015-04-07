@@ -1,0 +1,17 @@
+
+	<article>
+
+		<h1><%= article.title %></h1>
+		<time datetime="<%= article.published.datetime %>" title="<%= article.published.human_friendly %>"><%= article.published.human_friendly %></time>
+
+		<div class="body">
+			<%= article.body %>
+		</div>
+
+		<nav class="tags">
+			<% for (var n in article.tags) { var tag = article.tags[n] %>
+			<a class="tag" href="/tags/<%= tag.uri %>.html"><%= tag.label %></a>
+			<% } %>
+		</nav>
+
+	</article>
