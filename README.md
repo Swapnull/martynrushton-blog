@@ -14,3 +14,6 @@ Currently, when following the tag link you get a '/tags/<tag>.html', I would lik
 .htaccess file. This is server side technology and I would like to look into it.
 ### Comments
 Look into DISQUS for a comment system.
+### Metalsmith Plugins
+- Feed : An RSS feed
+- Word Count : A word count and estimated reading time.

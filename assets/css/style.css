@@ -25,7 +25,7 @@ div{
 ------------------*/
 
 #navigation{
-  background: url('/images/banner.jpg');
+  background: url('../images/banner.jpg');
   height:88px;
   width:100%;
 }

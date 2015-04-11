@@ -1,0 +1,82 @@
+/*------------------
+    GENERAL
+------------------*/
+
+html, body{
+  margin:0;
+  padding:0;
+  /*Change Font*/
+}
+
+div{
+  word-wrap: break-word;
+
+}
+
+.container{
+  margin-top:30px;
+  margin-left:5%;
+  width:90%;
+}
+
+
+/*------------------
+    NAVIGATION
+------------------*/
+
+#navigation{
+  background: url('../images/banner.jpg');
+  height:88px;
+  width:100%;
+}
+
+#nav-list{
+  margin:0;
+  margin-left:70%;
+  padding-top:30px;
+  /*display:none; Currently displaying none as none of the other pages are ready.*/
+}
+
+.nav-item{
+  display:inline-block;
+  margin-right:10px;
+}
+
+.nav-item a{
+  color:white;
+  text-decoration:none;
+}
+.nav-item a:hover,
+.nav-item a:focus{
+  text-decoration:underline;
+}
+
+.site-icon{
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  background: white;
+  margin-top: -79px;
+  margin-left: 10%;
+}
+
+/*------------------
+    CONTENT
+------------------*/
+
+.left-column,
+.right-column{
+  display:inline-block;
+  width:12%;
+  vertical-align:top;
+  margin: 10% 3.5%;
+}
+.main-content{
+  display:inline-block;
+  width:60%;
+}
+.content-index{
+  margin-left:19.5%;
+}

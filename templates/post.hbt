@@ -1,0 +1,9 @@
+{{> header}}
+<div class="left-column">This is where a small overview of the blog post will go for the lazy people who do not want to read it.</div>
+<article class="main-content">
+  <h1>{{ title }}</h1>
+  <time>{{ date }}</time>
+  {{{ contents }}}
+</article>
+<div class="right-column">This is where things like tags and categories will go. </div>
+{{> footer}}
