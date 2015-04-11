@@ -10,7 +10,8 @@ module.exports = {
 	},
 	wrappers: {
 		above: [
-			'templates/header.html'
+			'templates/header.html',
+			'templates/nav.html'
 		],
 		below: [
 			'templates/footer.html'

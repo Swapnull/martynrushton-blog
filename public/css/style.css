@@ -1,0 +1,43 @@
+html, body{
+  margin:0;
+  padding:0;
+  /*Change Font*/
+}
+
+.container{
+  margin-top:100px;
+}
+
+.banner{
+  width:110%;
+  padding:0;
+  margin:0;
+}
+
+
+#navigation{
+  background: url('/images/banner.jpg');
+  height:88px;
+  width:100%;
+}
+
+#nav-list{
+  margin:0;
+  margin-left:70%;
+  padding-top:30px;
+  /*display:none; Currently displaying none as none of the other pages are ready.*/
+}
+
+.nav-item{
+  display:inline-block;
+  margin-right:10px;
+}
+
+.nav-item a{
+  color:white;
+  text-decoration:none;
+}
+.nav-item a:hover,
+.nav-item a:focus{
+  text-decoration:underline;
+}
