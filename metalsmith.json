@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Swapnull's Blog",
+    "description": "Swapnull's uper-cool blog."
+  },
+  "plugins": {
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-templates": {
+      "engine": "handlebars"
+    }
+  }
+}

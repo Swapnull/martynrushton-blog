@@ -1,19 +1,28 @@
+/*------------------
+    GENERAL
+------------------*/
+
 html, body{
   margin:0;
   padding:0;
   /*Change Font*/
 }
 
+div{
+  word-wrap: break-word;
+
+}
+
 .container{
-  margin-top:100px;
+  margin-top:30px;
+  margin-left:5%;
+  width:90%;
 }
 
-.banner{
-  width:110%;
-  padding:0;
-  margin:0;
-}
 
+/*------------------
+    NAVIGATION
+------------------*/
 
 #navigation{
   background: url('/images/banner.jpg');
@@ -40,4 +49,34 @@ html, body{
 .nav-item a:hover,
 .nav-item a:focus{
   text-decoration:underline;
+}
+
+.site-icon{
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  background: white;
+  margin-top: -79px;
+  margin-left: 10%;
+}
+
+/*------------------
+    CONTENT
+------------------*/
+
+.left-column,
+.right-column{
+  display:inline-block;
+  width:12%;
+  vertical-align:top;
+  margin: 10% 3.5%;
+}
+.main-content{
+  display:inline-block;
+  width:60%;
+}
+.content-index{
+  margin-left:19.5%;
 }

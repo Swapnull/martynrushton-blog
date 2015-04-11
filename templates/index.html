@@ -1,39 +1,13 @@
+<html>
+<head>
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+	<link rel="stylesheet" href="/css/style.css"></link>
 
-<% for (var i in articles) { var article = articles[i] %>
-
-		<article>
-
-			<h2>
-				<a href="/article/<%= article.uri %>.html"><%= article.title %></a>
-			</h2>
-			<time datetime="<%= article.published.datetime %>" title="<%= article.published.human_friendly %>"><%= article.published.human_friendly %></time>
-
-			<div class="body">
-				<%= article.preview %>
-			</div>
-
-			<% if (article.preview.length < article.body.length) { %>
-			<a class="read-more" href="/article/<%= article.uri %>.html">read more</a>
-			<% } %>
-
-			<nav class="tags">
-				<% for (var n in article.tags) { var tag = article.tags[n] %>
-				<a class="btn tag" href="/tags/<%= tag.uri %>.html"><%= tag.label %></a>
-				<% } %>
-			</nav>
-
-		</article>
-
-	<% } %>
-
-		<nav class="pagination">
-
-			<% if (pagination.newer) { %>
-			<a class="pagination-anchor newer" href="<%= pagination.newer %>">Newer</a>
-			<% } %>
-
-			<% if (pagination.older) { %>
-			<a class="pagination-anchor older" href="<%= pagination.older %>">Older</a>
-			<% } %>
-
-		</nav>
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
+  {{contents}}
+</body>
+</html>
