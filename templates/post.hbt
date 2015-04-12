@@ -1,5 +1,5 @@
 {{> header}}
-<div class="left-column"><h3 id="summary-title">Summary</h3>{{ summary }}</div>
+<div class="left-column"><h3 id="summary-title">Summary</h3><hr>{{ summary }}</div>
 
 
 <article class="main-content">
@@ -18,7 +18,7 @@
 
 
 <div class="right-column">
-  <h3 id="tag-title"> More Like This </h3>
+  <h3 id="tag-title"> More Like This </h3><hr>
   <ul class="tag-list">
     {{#each tags}}
       <li class="tag"><a href="./tags/{{this}}">{{this}}</a></li>

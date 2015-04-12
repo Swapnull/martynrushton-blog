@@ -6,6 +6,7 @@
         <title>{{title}} | Swapnull</title>
 
         <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> <!-- open-sans font -->
         <link rel="stylesheet" href="/assets/css/style.css"></link>
 
     </head>

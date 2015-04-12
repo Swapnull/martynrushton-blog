@@ -5,7 +5,7 @@
 html, body{
   margin:0;
   padding:0;
-  /*Change Font*/
+  font-family: 'Open Sans', sans-serif;
 }
 
 div{
@@ -70,12 +70,17 @@ div{
   margin-left:19.5%;
 }
 
+.caption{
+  font-size:11px;
+  color:grey;
+}
+
 .left-column,
 .right-column{
   display:inline-block;
   width:14%;
   vertical-align:top;
-  margin-top:3%;
+  margin-top:2.1%;
 }
 
 .left-column{
@@ -104,17 +109,27 @@ div{
 
 .tag{
   display:inline-block;
+  background:lightgrey;
+  padding:1px 5px;
+  margin:3px 5px;
+}
+
+.tag:hover,
+.tag:focus{
+  background:grey;
+}
+
+.tag:hover a,
+.tag:focus a{
+  color:white;
 }
 
 .tag a{
   text-decoration:none;
   color:black;
+  font-size:11px;
 }
 
-.tag a:hover,
-.tag a:focus{
-  text-decoration:underline;
-}
 
 
 .published-date{
