@@ -16,6 +16,8 @@ Handlebars.registerPartial('nav', fs.readFileSync(__dirname + '/templates/partia
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.hbt').toString());
 
 
+
+
 /* Blog engine setup */
 module.exports = {
   setup: function(){

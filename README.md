@@ -17,3 +17,4 @@ Look into DISQUS for a comment system.
 ### Metalsmith Plugins
 - Feed : An RSS feed
 - Word Count : A word count and estimated reading time.
+- Tags : Will create a page that list each post with that tag

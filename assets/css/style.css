@@ -66,17 +66,65 @@ div{
     CONTENT
 ------------------*/
 
+.content-index{
+  margin-left:19.5%;
+}
+
 .left-column,
 .right-column{
   display:inline-block;
-  width:12%;
+  width:14%;
   vertical-align:top;
-  margin: 10% 3.5%;
+  margin-top:3%;
 }
+
+.left-column{
+  margin-right:5%;
+}
+.right-column{
+  margin-left:5%;
+}
+
 .main-content{
   display:inline-block;
   width:60%;
 }
-.content-index{
-  margin-left:19.5%;
+
+.main-content .title{
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.tag-list{
+  display:inline-block;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.tag{
+  display:inline-block;
+}
+
+.tag a{
+  text-decoration:none;
+  color:black;
+}
+
+.tag a:hover,
+.tag a:focus{
+  text-decoration:underline;
+}
+
+
+.published-date{
+  text-align:center;
+  font-size:14px;
+  margin:0;
+  padding:0;
+}
+
+#summary-title,
+#tag-title{
+  text-align:center;
 }

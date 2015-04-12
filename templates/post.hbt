@@ -1,9 +1,28 @@
 {{> header}}
-<div class="left-column">This is where a small overview of the blog post will go for the lazy people who do not want to read it.</div>
+<div class="left-column"><h3 id="summary-title">Summary</h3>{{ summary }}</div>
+
+
 <article class="main-content">
-  <h1>{{ title }}</h1>
-  <time>{{ date }}</time>
+  <div>
+    <h1 class="title">
+      {{ title }}
+    </h1>
+    <div class="published-date">
+      {{ date }}
+    </div>
+  </div>
+  <hr>
+
   {{{ contents }}}
 </article>
-<div class="right-column">This is where things like tags and categories will go. </div>
+
+
+<div class="right-column">
+  <h3 id="tag-title"> More Like This </h3>
+  <ul class="tag-list">
+    {{#each tags}}
+      <li class="tag"><a href="./tags/{{this}}">{{this}}</a></li>
+    {{/each}}
+  </ul>
+</div>
 {{> footer}}
