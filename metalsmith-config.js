@@ -52,8 +52,8 @@ var moveIndex = function(){
 
   source.pipe(dest);
   source.on('end', function() {
-    console.log('index copied successfully');
-    deleteFolderRecursive('./build/posts/home-page')
+    //console.log('index copied successfully');
+    //deleteFolderRecursive('./build/posts/home-page')
   });
   source.on('error', function(err) { console.log('index copy failed')});
 };
