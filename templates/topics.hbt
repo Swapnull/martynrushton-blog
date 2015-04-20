@@ -1,0 +1,7 @@
+{{> header}}
+
+<ul class="topics">
+	{{getTopics tags}}
+</ul>
+
+{{> footer}}

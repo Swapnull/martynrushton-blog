@@ -34,8 +34,9 @@
 <div class="right-column">
   <h3 id="tag-title"> More Like This </h3><hr>
   <ul class="tag-list">
+
     {{#each tags}}
-      <li class="tag"><a href="./tags/{{this}}">{{this}}</a></li>
+      <li class="tag"><a href="/topics/{{ this }}">{{ this }}</a></li>
     {{/each}}
   </ul>
 </div>

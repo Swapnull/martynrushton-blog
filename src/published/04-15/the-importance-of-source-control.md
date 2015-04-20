@@ -1,9 +1,10 @@
 ---
 title: The Importance of Source Control
 summary: Source control is not used by all developers, in this article I explain why it should be.
-date: April 12th 2015
+date: 2015-04-19
+longdate: April 19th 2015
 template: post.hbt
-tags: [git, svn, source control, programming]
+tags: git, svn, source control, programming
 ---
 
 The results of the [Stack Overflow survey](http://stackoverflow.com/research/developer-survey-2015) have been released. Most of the results are unsurprising in most respects, the most popular development language is Javascript, most users are on Windows and there is a deficiency of women in tech. The one statistic that stood out for me is the fact that almost 10% of developers still do not source control their work.

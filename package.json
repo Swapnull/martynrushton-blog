@@ -12,7 +12,10 @@
     "metalsmith-permalinks":"^0.1.1",
     "metalsmith-drafts":"*",
     "metalsmith-assets":"*",
-    "handlebars": "^2.0.0-alpha.2"
+    "metalsmith-tags":"*",
+    "metalsmith-word-count":"*",
+    "handlebars": "^2.0.0-alpha.2",
+    "moment":"*"
 
   },
   "scripts":{

@@ -1,27 +1,28 @@
 //This is the config for the metalsmith blog engine
 
-var fs = require('fs')
-
-
+//metalsmith requires
 var Metalsmith = require('metalsmith')
 var drafts = require('metalsmith-drafts');
 var markdown = require('metalsmith-markdown');
 var permalinks = require('metalsmith-permalinks');
 var templates = require('metalsmith-templates');
 var assets = require('metalsmith-assets');
-var Handlebars = require('handlebars')
+var wordcount = require('metalsmith-word-count');
+var tags = require('metalsmith-tags');
 
-Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/templates/partials/header.hbt').toString());
-Handlebars.registerPartial('nav', fs.readFileSync(__dirname + '/templates/partials/nav.hbt').toString());
-Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.hbt').toString());
-
-
+//other requires
+var handleHelpers = require('./handlebars-helpers') //also requires fs and moment
 
 
 /* Blog engine setup */
 module.exports = {
   setup: function(){
     return Metalsmith(__dirname)
+          .use(tags({
+              handle: 'tags',                  // yaml key for tag list in you pages
+              path:'topics/:tag.html',                   // path for result pages
+              template: 'tag.hbt'   // template to use for tag listing
+          }))
           .use(drafts())
           .use(markdown())
           .use(permalinks('posts/:title'))

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Swapnull's Blog",
-    "description": "Swapnull's uper-cool blog."
+    "description": "Swapnull's blog."
   },
   "plugins": {
     "metalsmith-markdown": {},
@@ -14,6 +14,11 @@
     "metalsmith-assets": {
        "source": "./assets",
        "destination": "./assets"
+    },
+    "metalsmith-tags": {
+      "handle": "tags",
+      "path": "topics/:tag.html",
+      "template": "/templates/tag.hbt"
     }
   }
 }

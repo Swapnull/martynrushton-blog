@@ -1,6 +1,6 @@
 var http = require('http')
 var ecstatic = require('ecstatic')
-var metalsmith = require('./metalsmith-config')
+var metalsmith = require('./metalsmith-config') 
 
 metalsmith.setup();
 
