@@ -21,7 +21,6 @@ Handlebars.registerHelper('getTopics', function(context){
   var currentObj = ''
   var key = ''
   var topics = []
-  console.log(Object.keys(context).length)
   for(var i=0; i<Object.keys(context).length;i++){
 
     key = Object.keys(context)[i]
@@ -46,7 +45,7 @@ Handlebars.registerHelper('getTopics', function(context){
   return new Handlebars.SafeString(topics.join(""));
 });
 
+//make the links broweser friendly
 Handlebars.registerHelper('getLink', function(context){
-
-return '/posts/' + context.replace(/ /g, "-")
+return '/posts/' + context.toLowerCase().replace(/ /g, "-")
 })
