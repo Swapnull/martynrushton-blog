@@ -35,7 +35,7 @@ Handlebars.registerHelper('getTopics', function(context){
       '<a class="topic-link" href="/topics/'+ key + '">' +
         '<li class="topic">' +
             '<span class="topic-title">'+ key.toUpperCase() +'</span><br>'+
-            '<span class="topic-post-count">is tagged in '+ context[key].length +' [POST]</span>'+  
+            '<span class="topic-post-count">is tagged in '+ context[key].length +' [POST]</span>'+
         '</li>' + '</a>')
 
     if(context[key].length == 1)
@@ -45,3 +45,8 @@ Handlebars.registerHelper('getTopics', function(context){
   }
   return new Handlebars.SafeString(topics.join(""));
 });
+
+Handlebars.registerHelper('getLink', function(context){
+
+return '/posts/' + context.replace(/ /g, "-")
+})
