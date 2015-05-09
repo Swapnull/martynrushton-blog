@@ -21,7 +21,12 @@
       "template": "/templates/tag.hbt",
       "sortBy": "date",
       "reverse": true
-
-    }
+    },
+    "metalsmith-collections": {
+      "articles": {
+        "pattern": "./published/*.md",
+        "sortBy": "date",
+        "reverse": true
+      }
   }
 }

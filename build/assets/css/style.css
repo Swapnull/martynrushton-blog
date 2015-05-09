@@ -24,6 +24,14 @@ div{
   width:100%;
 }
 
+#blog-nav{
+  background: grey;
+  height:22px;
+  margin-top:9px;
+  padding:0;
+  width:100%;
+}
+
 .nav-item{
   display:inline-block;
   margin-right:10px;

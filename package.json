@@ -13,6 +13,7 @@
     "metalsmith-drafts":"*",
     "metalsmith-assets":"*",
     "metalsmith-tags":"*",
+    "metalsmith-collections":"*",
     "handlebars": "^2.0.0-alpha.2",
     "moment":"*"
 

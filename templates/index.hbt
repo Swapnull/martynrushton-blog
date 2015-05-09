@@ -1,5 +1,35 @@
 {{> header}}
-  <div class="main-content content-index">
-    {{{ contents }}}
-  </div>
+{{#each collections.articles}}
+<div class"row" style="margin-bottom:20px;">
+	<div class="left-column">{{ this.summary }}</div>
+
+
+	<article class="main-content" >
+	  <div class="post-info">
+	    <h1 class="title">
+				<a href="{{getLink this.title }}">{{ this.title }}</a>
+	    </h1>
+	    <div class="published-date">
+	      {{ dateFormat this.date "dddd MMMM Do YYYY"  }}
+	    </div>
+	  </div>
+	  <hr>
+
+	  {{{ this.contents }}}
+
+	</article>
+
+
+	<div class="right-column">
+		<span class="tag-list-title">MORE LIKE THIS</span>
+	  <ul class="tag-list">
+
+	    {{#each this.tags}}
+	      <li class="tag"><a href="/topics/{{ this }}">{{ this }}</a></li>
+	    {{/each}}
+	  </ul>
+	</div>
+</div>
+{{/each}}
+
 {{> footer}}

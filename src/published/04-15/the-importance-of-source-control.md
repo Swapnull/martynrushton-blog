@@ -3,6 +3,7 @@ title: The Importance of Source Control
 summary: Source control is not used by all developers, in this article I explain why it should be.
 date: 2015-04-19
 template: post.hbt
+collection: articles
 tags: git, svn, source control, programming
 ---
 

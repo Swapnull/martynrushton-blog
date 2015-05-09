@@ -8,6 +8,8 @@ var permalinks = require('metalsmith-permalinks');
 var templates = require('metalsmith-templates');
 var assets = require('metalsmith-assets');
 var tags = require('metalsmith-tags');
+var collections = require('metalsmith-collections');
+
 
 //other requires
 var handleHelpers = require('./handlebars-helpers') //also requires fs and moment
@@ -24,14 +26,22 @@ module.exports = {
               sortBy: "date",
               reverse : true
           }))
-          .use(drafts())
           .use(markdown())
+          .use(drafts())
           .use(permalinks('posts/:title'))
           .use(templates('handlebars'))
           .use(assets({
               source: './assets',
               destination: './assets'
             }))
+          .use(collections({
+              articles: {
+                pattern: './published/*.md',
+                sortBy: 'date',
+                reverse: true
+              }
+            }))
+
           .destination('./build')
           .build(function(err, files) {
                   if (err) {
