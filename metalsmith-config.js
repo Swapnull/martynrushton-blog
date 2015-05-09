@@ -7,7 +7,6 @@ var markdown = require('metalsmith-markdown');
 var permalinks = require('metalsmith-permalinks');
 var templates = require('metalsmith-templates');
 var assets = require('metalsmith-assets');
-var wordcount = require('metalsmith-word-count');
 var tags = require('metalsmith-tags');
 
 //other requires
@@ -21,7 +20,9 @@ module.exports = {
           .use(tags({
               handle: 'tags',                  // yaml key for tag list in you pages
               path:'topics/:tag.html',                   // path for result pages
-              template: 'tag.hbt'   // template to use for tag listing
+              template: 'tag.hbt',   // template to use for tag listing
+              sortBy: "date",
+              reverse : true
           }))
           .use(drafts())
           .use(markdown())

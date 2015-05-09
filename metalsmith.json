@@ -18,7 +18,10 @@
     "metalsmith-tags": {
       "handle": "tags",
       "path": "topics/:tag.html",
-      "template": "/templates/tag.hbt"
+      "template": "/templates/tag.hbt",
+      "sortBy": "date",
+      "reverse": true
+
     }
   }
 }

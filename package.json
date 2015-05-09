@@ -13,7 +13,6 @@
     "metalsmith-drafts":"*",
     "metalsmith-assets":"*",
     "metalsmith-tags":"*",
-    "metalsmith-word-count":"*",
     "handlebars": "^2.0.0-alpha.2",
     "moment":"*"
 

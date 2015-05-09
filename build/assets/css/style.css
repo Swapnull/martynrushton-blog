@@ -84,16 +84,21 @@ div{
 .left-column,
 .right-column{
   display:inline-block;
-  width:20%;
   vertical-align:top;
-  margin-top:2%;
+  margin-top:90px;
+
 }
 
 .left-column{
-  margin-right:4%;
+  margin-right:7%;
+  margin-left:2%;
+  width:15%;
+  text-align:right;
+  color:#999;
 }
 .right-column{
   margin-left:4%;
+  width:20%;
 }
 
 .main-content{
@@ -104,6 +109,21 @@ div{
 .main-content .title{
   text-align:center;
   margin-bottom:10px;
+}
+
+.main-content .title a{
+  color:black;
+}
+
+.main-content .title a:hover{
+  color:#999;
+}
+/*------------------
+    POSTS
+------------------*/
+
+.post-info{
+  height:57px;
 }
 
 .post-img{
@@ -149,6 +169,12 @@ div{
   font-size:11px;
 }
 
+.tag-list-title{
+  margin-left:30%;
+  color:#999;
+  margin-bottom:10px;
+}
+
 .tag-list{
   display:inline-block;
   list-style-type:none;
@@ -157,12 +183,14 @@ div{
 }
 
 
-/*TEMP*/
+/*------------------
+    TOPICS
+------------------*/
 
 .topics {
     list-style-type:none;
     display:inline-block;
-    width:100%;
+    width:90%;
 }
 
 .topic {
@@ -170,15 +198,20 @@ div{
     width:20%;
     padding:15px 10px;
     margin:5px;
-    background:black;
+    background:lightgrey;
+    color:black!important;
     text-align:center;
 }
 
+.topic:hover{
+    background:grey;
+    color:white!important;
+}
 .topic-link{
     text-decoration:none;
-    color:white;
+    color:white!important;
 }
 
 .topic-title{
-    font-size:2em
+    font-size:2em; /*Drop to 1.5em if any longer tags are needed*/
 }

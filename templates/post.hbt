@@ -1,5 +1,5 @@
 {{> header}}
-<div class="left-column"><h3 id="summary-title">Summary</h3><hr>{{ summary }}</div>
+<div class="left-column">{{ summary }}</div>
 
 
 <article class="main-content">
@@ -8,8 +8,9 @@
       {{ title }}
     </h1>
     <div class="published-date">
-      {{ date }}
+      {{ dateFormat date "dddd MMMM Do YYYY" }}
     </div>
+
   </div>
   <hr>
 
@@ -32,7 +33,7 @@
 
 
 <div class="right-column">
-  <h3 id="tag-title"> More Like This </h3><hr>
+  <span class="tag-list-title">MORE LIKE THIS</span>
   <ul class="tag-list">
 
     {{#each tags}}

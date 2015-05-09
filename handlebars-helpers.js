@@ -25,11 +25,6 @@ Handlebars.registerHelper('getTopics', function(context){
 
     key = Object.keys(context)[i]
 
-    /*for(var j=0; j < context[key].length; j++){
-      currentObj = context[key][j]
-
-      This is to iterate over each post, not needed yet.
-    } */
     topics.push(
       '<a class="topic-link" href="/topics/'+ key + '">' +
         '<li class="topic">' +
@@ -47,5 +42,10 @@ Handlebars.registerHelper('getTopics', function(context){
 
 //make the links broweser friendly
 Handlebars.registerHelper('getLink', function(context){
-return '/posts/' + context.toLowerCase().replace(/ /g, "-")
+  return '/posts/' + context.toLowerCase().replace(/ /g, "-")
+})
+
+//Makes a string upper case
+Handlebars.registerHelper('toUpper', function(context){
+  return context.toUpperCase()
 })
