@@ -19,21 +19,15 @@ var handleHelpers = require('./handlebars-helpers') //also requires fs and momen
 module.exports = {
   setup: function(){
     return Metalsmith(__dirname)
+          .use(drafts())
           .use(tags({
-              handle: 'tags',                  // yaml key for tag list in you pages
-              path:'topics/:tag.html',                   // path for result pages
-              template: 'tag.hbt',   // template to use for tag listing
+              handle: 'tags',
+              path:'topics/:tag.html',
+              template: 'tag.hbt',
               sortBy: "date",
               reverse : true
           }))
           .use(markdown())
-          .use(drafts())
-          .use(permalinks('posts/:title'))
-          .use(templates('handlebars'))
-          .use(assets({
-              source: './assets',
-              destination: './assets'
-            }))
           .use(collections({
               articles: {
                 pattern: './published/*.md',
@@ -41,7 +35,12 @@ module.exports = {
                 reverse: true
               }
             }))
-
+          .use(permalinks('posts/:title'))
+          .use(templates('handlebars'))
+          .use(assets({
+              source: './assets',
+              destination: './assets'
+            }))
           .destination('./build')
           .build(function(err, files) {
                   if (err) {

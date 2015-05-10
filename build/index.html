@@ -35,6 +35,55 @@
       
       <div class="container">
 
+<div class"row" style="margin-bottom:20px;">
+	<div class="left-column">Source control is not used by all developers, in this article I explain why it should be.</div>
+
+
+	<article class="main-content" >
+	  <div class="post-info">
+	    <h1 class="title">
+				<a href="/posts/the-importance-of-source-control">The Importance of Source Control</a>
+	    </h1>
+	    <div class="published-date">
+	      Sunday April 19th 2015
+	    </div>
+	  </div>
+	  <hr>
+
+	  <p>The results of the <a href="http://stackoverflow.com/research/developer-survey-2015">Stack Overflow survey</a> have been released. Most of the results are unsurprising in most respects, the most popular development language is Javascript, most users are on Windows and there is a deficiency of women in tech. The one statistic that stood out for me is the fact that almost 10% of developers still do not source control their work.</p>
+<p class="post-img">
+  <img src="/assets/images/post-images/source-control-results.jpg" alt="Stack Overflow survey Screenshot">
+  <span class="caption">Screenshot of the source control results from the Stack Overflow survery</span>
+</p>
+
+<p>15.9% of people who took the survey identified themselves as students, while 66.3% identified themselves as been in full-time employment. I know from been a student who has taken a year out to work in industry, that most Computer Science/Software Engineering students do not bother with, nor fully understand why and how to use source control. That is understandable as the vast majority only write the code they need for the class and don&#39;t spend hours programming just for the love of it. The worrying statistic is, if we say there was roughly a 4:1 ratio of professionals to students in the survey, we can then determine that roughly 7.5% of professionals do not use source control.</p>
+<h2 id="why-should-people-use-source-control-">Why should people use source control?</h2>
+<p><strong>Breaking changes</strong> : All developers have had code break for, what they think is, no reason what-so-ever, for instance, while creating this site I managed to create a deployment problem because I had made a breaking change that stopped the blog engine from working. I could have very easily spent hours rummaging through code, staring at documentation and rewriting sections before it started working. Instead of doing that, I fired up git diff and found that I had accidentally removed the parentheses from a function, fixed in 2 minutes.</p>
+<p>If the git diff had not shown me what I needed, I could have easily reverted to the last commit and lost 20 minutes worth of time, testing more often to make sure I am not making the same mistakes.</p>
+<p><strong>Change Logs</strong> : When working in teams, change logs are important. This could be kept in a word document, an excel spreadsheet or a text file, but these files are not only unreliable but they will not give as much information as a git log will. Git log gives you the exact time, date, message and user that made a commit, with the ability to actually see what they have changed. This does not only hold people accountable, it also makes people much more honest when adding to change logs and much less likely to commit poor code.</p>
+<p><strong>Branching</strong> : Branching is a complicated process, and for that very reason there are many tutorials out there, but it is an important concept. At its basic form imagine it as you save a copy of your code, lets call that the &#39;master&#39; code. You then do your coding on a version called &#39;working&#39;. This way, if you decide the changes you have made are not the way you want to go, you can discard your &#39;working&#39; folder. However, if you decide you like the features, your &#39;working&#39; folder becomes your &#39;master&#39; and your old &#39;master&#39; is discarded.</p>
+<h2 id="how-to-use-source-control-">How to use source control?</h2>
+<p>Fair enough, the theory behind source control is a solid one and that is why 90% of developers use it, but it is confusing and will make your head hurt at first.</p>
+<p><strong>GUI Clients</strong> : The most high level way of using source control is by using a client. By using one of the clients (such as Github for Windows or Tortoise SVN) you can easily source control your files almost like a file explorer and you never really have to touch a terminal.</p>
+<p><strong>Text Editor Extentions</strong> : Most modern day text editors (Atom.io, Sublime Text, Brackets) and even some IDE&#39;s (Visual Studio, Eclipse, Netbeans) have extensions that will allow you to source control your work from the place you write your code. Some of these can be quite tricky to use as they have tried to make them minimal and they are usually user created, but some people still find it easier than using a command line/terminal.</p>
+<p><strong>Command Line/Terminal</strong> : The classic, and in my opinion, best way of using source control is via the terminal. The terminal is an old and solid piece of software that most users still relate to the 1980&#39;s and films such as War Games. This is not the case, any modern day developer should be able to use a terminal, especially as most source control commands are two or three words long.</p>
+
+
+	</article>
+
+
+	<div class="right-column">
+		<span class="tag-list-title">MORE LIKE THIS</span>
+	  <ul class="tag-list">
+
+	      <li class="tag"><a href="/topics/git">git</a></li>
+	      <li class="tag"><a href="/topics/svn">svn</a></li>
+	      <li class="tag"><a href="/topics/source-control">source-control</a></li>
+	      <li class="tag"><a href="/topics/programming">programming</a></li>
+	  </ul>
+	</div>
+</div>
+
 
 
   </div><!-- container -->

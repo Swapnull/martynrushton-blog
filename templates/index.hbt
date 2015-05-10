@@ -1,4 +1,5 @@
 {{> header}}
+
 {{#each collections.articles}}
 <div class"row" style="margin-bottom:20px;">
 	<div class="left-column">{{ this.summary }}</div>

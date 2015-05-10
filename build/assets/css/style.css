@@ -198,7 +198,7 @@ div{
 .topics {
     list-style-type:none;
     display:inline-block;
-    width:90%;
+    width:100%;
 }
 
 .topic {
