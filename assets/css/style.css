@@ -238,6 +238,10 @@ div{
     width:100%;
   }
 
+  .site-icon{
+    display:none;
+  }
+
   .post-info{
     height:90px;
   }
