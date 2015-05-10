@@ -242,4 +242,18 @@ div{
     height:90px;
   }
 
+  .topics{
+    margin-left: 0;
+    padding-left: 2%;
+
+  }
+
+  .topic {
+      width:90%!important;
+      margin:5px;
+      margin-left:0!important;
+      padding-left:0!important;
+  }
+
+
 }
