@@ -22,6 +22,7 @@ div{
   background: url('../images/banner.jpg');
   height:88px;
   width:100%;
+
 }
 
 .nav-item{
@@ -43,7 +44,7 @@ div{
   padding-top:30px;
   padding-left:0!important;
   text-align:right;
-
+  padding-right:30px;
 }
 
 .site-icon{
@@ -126,6 +127,7 @@ div{
 
 .post-info{
   height:57px;
+  margin-bottom: 3%;
 }
 
 .post-img{

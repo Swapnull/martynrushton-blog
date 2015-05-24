@@ -1,19 +1,6 @@
-# blog.martynrushton.com
+The MIT License (MIT)
 
-## Premise
-This is a platform for me to write my thoughts and ideas down. The main aim is to see how I progress as a programmer
-
-## Tools & Further Development
-I have used the metalsmith blog framework in this blog, you can find how I have set it up in the metalsmith.json and metalsmith-config.js files. I have also used some handlebars which can be found in handlebars-helpers.js .
-
-This is available under the MIT License but if you happen to use some of this code please give a link back to "www.martynrushton.com" in the comments somewhere on your site. If you see something that could be done better in the code, please fix it and open a pull request.
-
-
-## License
-
-The MIT License
-
-Copyright (c) 2010-2015 Google, Inc. http://angularjs.org
+Copyright (c) 2015 Martyn Rushton (Swapnull)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

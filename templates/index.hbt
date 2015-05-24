@@ -4,8 +4,7 @@
 <div class"row" style="margin-bottom:20px;">
 	<div class="left-column">{{ this.summary }}</div>
 
-
-	<article class="main-content" >
+	<div class="main-content">
 	  <div class="post-info">
 	    <h1 class="title">
 				<a href="{{getLink this.title }}">{{ this.title }}</a>
@@ -18,7 +17,7 @@
 
 	  {{{ this.contents }}}
 
-	</article>
+	</div>
 
 
 	<div class="right-column">
